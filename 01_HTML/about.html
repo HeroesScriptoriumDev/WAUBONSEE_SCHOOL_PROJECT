@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- METADATA -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="The online portfolio of Matthew Ferreira | About Page">
+        <meta name="author" content="Matthew Ferreira">
+        <meta name="keywords" content="matthew ferreira, ferreira, video editing, animation, 3D modeling, voice work">
+        <meta name="application-name" content="Ferreira Portfolio">
+        <meta property="og:title" content="Matthew Ferreira | Waubonsee Digital Portfolio | About Page">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="The online portfolio of Matthew Ferreira | About Page">
+        <meta property="og:url" content="https://www.ferreira-portfolio.onrender.com">
+        <meta property="og:image:alt" content="An image should eventually be here">
+        <meta property="og:image" content=".//04_IMAGES/portfolio_preview.jpg">
+        <meta property="og:site_name" content="Ferreira Digital Portfolio | About Page">
+        <meta property="og:locale" content="en_US">
+
+        <!-- FAVICON IMG -->
+        <link rel="icon" href="../04_IMAGES/favicon.svg" type="image/svg+xml">
+
+        <!-- CSS LINKING -->
+        <link rel="stylesheet" href="../02_CSS/reset.css">
+        <link rel="stylesheet" href="../02_CSS/variables.css">
+        <link rel="stylesheet" href="../02_CSS/global_layout.css">
+        <link rel="stylesheet" href="../02_CSS/global_styles.css">
+        <link rel="stylesheet" href="../02_CSS/about_layout.css">
+        <link rel="stylesheet" href="../02_CSS/about_styles.css">
+
+        <!-- JAVASCRIPT LINKING -->
+        <script src="../03_JS/about.js" defer></script>
+
+        <!-- PAGE INFORMATION -->
+        <title>Ferreira's About Me</title>
+    </head>
+
+    <body>
+        <div class="layout">
+            <div class="left">
+
+                <!-- PAGE NAVIGATION -->
+                <nav class="left-sidebar">
+                    <a class="left-sidebar-btn home-page" href="index.html">
+                        <span>Home Page</span>
+                        <span class="icons8-home"></span>
+                    </a>
+
+                    <a class="left-sidebar-btn about-page" href="about.html">
+                        <span>About Page</span>
+                        <span class="icons8-about"></span>
+                    </a>
+
+                    <a class="left-sidebar-btn prior-page" href="prior-work.html">
+                        <span>Prior Work</span>
+                        <span class="icons8-prior"></span>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- WHEEL NAVIGATION -->
+            <nav class="wheel-nav" aria-label="Portfolio Navigation">
+                <div class="wheel-track">
+                    <!-- PROFILE -->
+                    <button class="wheel-item active" type="button" data-view="profile" aria-label="Profile" aria-pressed="true">
+                        <span class="wheel-item-label">Profile</span>
+                    </button>
+
+                    <!-- EDUCATION -->
+                    <button class="wheel-item" type="button" data-view="education" aria-label="Education" aria-pressed="false">
+                        <span class="wheel-item-label">Education</span>
+                    </button>
+
+                    <!-- MILITARY -->
+                    <button class="wheel-item" type="button" data-view="military" aria-label="Military" aria-pressed="false">
+                        <span class="wheel-item-label">Military</span>
+                    </button>
+
+                    <!-- WORK HISTORY -->
+                    <button class="wheel-item" type="button" data-view="history" aria-label="Work History" aria-pressed="false">
+                        <span class="wheel-item-label">Work History</span>
+                    </button>
+
+                    <!-- PROFESSIONAL DEVELOPMENT -->
+                    <button class="wheel-item" type="button" data-view="development" aria-label="Development" aria-pressed="false">
+                        <span class="wheel-item-label">Professional Development</span>
+                    </button>
+
+                    <!-- VIDEO & ANIMATION -->
+                    <button class="wheel-item" type="button" data-view="animation" aria-label="Video & Animation" aria-pressed="false">
+                        <span class="wheel-item-label">Video & Animation</span>
+                    </button>
+
+                    <!-- SKILLS -->
+                    <button class="wheel-item" type="button" data-view="skills" aria-label="Skills" aria-pressed="false">
+                        <span class="wheel-item-label">Skills</span>
+                    </button>
+
+                    <!--SOCIALS -->
+                    <button class="wheel-item" type="button" data-view="socials" aria-label="Socials" aria-pressed="false">
+                        <span class="wheel-item-label">Socials</span>
+                    </button>
+                </div>
+
+                <!-- WHEEL CONTROLS -->
+                <div class="wheel-center">
+                    <button id="wheel-prev" class="wheel-arrow" type="button" aria-label="Previous Section">
+                        &#10094;
+                    </button>
+
+                    <span id="wheel-current">Profile</span>
+
+                    <button id="wheel-next" class="wheel-arrow" type="button" aria-label="Next Selection">
+                        &#10095;
+                    </button>
+                </div>
+            </nav>
+
+            <!-- EXPANDABLE FORM -->
+            <section class="project-request" aria-label="Project request">
+                <button id="toggle-project-form" class="request-button" type="button" aria-expanded="false" aria-controls="project-form-panel">Start a Project</button>
+
+                <div id="project-form-panel" hidden>
+                    <p id="project-form-help" class="request-note">
+                        Fields marked * are required.
+                    </p>
+
+                    <form id="project-request-form" aria-describedby="project-form-help">
+                        <!-- Contact Information -->
+                        <fieldset>
+                            <legend>Your Information</legend>
+                            <div class="request-grid">
+                                <div class="request-field">
+                                    <label for="request-name">Full Name *</label>
+                                    <input type="text" id="request-name" name="fullName" autocomplete="name" placeholder="Your first and last name" maxlength="100" required>
+                                </div>
+                                <div class="request-field">
+                                    <label for="request-email">Email Address *</label>
+                                    <input type="email" id="request-email" name="email" autocomplete="email" placeholder="mfera@ferastudios.net" maxlength="254" required>
+                                </div>
+
+                                <div class="request-field">
+                                    <label for="request-phone">Phone Number</label>
+                                    <input type="tel" id="request-phone" name="phone" autocomplete="tel" placeholder="(800)-588-2300" maxlength="15">
+                                </div>
+                                <div class="request-field">
+                                    <label for="request-company">Company or Channel Name</label>
+                                    <input type="text" id="request-company" name="company" autocomplete="organization" placeholder="Fera Studios LLC" maxlength="150">
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Project Information -->
+                        <fieldset>
+                            <legend>Project Information</legend>
+                            <div class="request-grid">
+                                <div class="request-field">
+                                    <label for="request-category">Project Category *</label>
+                                    <select id="request-category" name="category" required>
+                                        <option value="">Select a Category</option>
+                                        <option value="video_editing">Video Editing</option>
+                                        <option value="3d_animation">3D Animation</option>
+                                        <option value="post_production">Post-Production</option>
+                                    </select>
+                                </div>
+                                <div class="request-field">
+                                    <label for="request-timeline">Preferred Timeline *</label>
+                                    <select id="request-timeline" name="timeline" required>
+                                        <option value="">Select a Timeline</option>
+                                        <option value="flexible">Flexible</option>
+                                        <option value="2_weeks">Within 2 Weeks</option>
+                                        <option value="1_month">Within a Month</option>
+                                        <option value="month">More than a Month</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <fieldset class="request-services">
+                                <legend>Services Needed</legend>
+                                <p>
+                                    Select ALL that apply.
+                                </p>
+                                <div class="request-checkboxes">
+                                    <label for="service-editing">
+                                        <input type="checkbox" id="service-editing" name="services" value="video_editing">Video Editing
+                                    </label>
+                                    <label for="service-animation">
+                                        <input type="checkbox" id="service-animation" name="services"   value="animation">3D Animation
+                                    </label>
+                                    <label for="service-motion">
+                                        <input type="checkbox" id="service-motion" name="services" value="motion_graphics">Motion Graphics
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <div class="request-field">
+                                <label for="request-description">Project Description *</label>
+                                <textarea id="request-description" name="description" rows="6" minlength="20" maxlength="500" placeholder="Describe your project in 500 characters or less." aria-describedby="request-description-help" required></textarea>
+                                <small id="request-description-help">
+                                    Enter between 20 and 500 characters.
+                                </small>
+                            </div>
+                        </fieldset>
+                        <div class="request-actions">
+                            <button class="request-button" type="submit" disabled>Review Request</button>
+                            <button class="request-button request-button-secondary" type="reset">Clear Form</button> 
+                        </div>
+                    </form>
+                    <section id="project-request-summary" class="request-summary" aria-labelledby="request-summary-heading" tabindex="-1" hidden>
+                        <h3 id="request-summary-heading">Your Project Request</h3>
+                        <p>
+                            Review your information below.
+                            Your request has not been sent.
+                        </p>
+                        <dl id="project-request-details"></dl>
+                        <button id="edit-project-request" class="request-button request-button-secondary" type="button"> Edit Request </button>
+                    </section>
+                </div>
+            </section>
+
+            <!-- MAIN DISPLAY -->
+            <main id="main-content" class="main-content">
+                <!-- HEADER -->
+                <header class="page-header">
+                    <p class="eyebrow">Ferreira Digital Portfolio</p>
+                    <h1 id="page-title">Profile</h1>
+                    <div class="header-line"></div>
+                </header>
+
+                <!-- PROFILE -->
+                <section class="content-view active" data-view="profile">
+                    <section>
+                        <h2>Video Production Services</h2>
+                        <p>
+                            Explore my video ediint, animatio, and post-production services.
+                        </p>
+
+                        <table class="services-table">
+                            <caption>
+                                Video Production Services and Pricing
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Category</th>
+                                    <th scope="col">Service</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Starting Price</th>
+                                    <th scope="col">Turnaround</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <!-- VIDEO EDITING -->
+                                <tr>
+                                    <th scope="rowgroup" rowspan="4">
+                                        Video Editing
+                                    </th>
+                                    <td>Basic Edits</td>
+                                    <td>Trimming, cuts, and transitions</td>
+                                    <td>$75</td>
+                                    <td>2-3 Days</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Advanced Editing</td>
+                                    <td>Multi-cam editing and color correction</td>
+                                    <td>$150</td>
+                                    <td>3-5 Days</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Documentry Style Editing</td>
+                                    <td>Interviews, storytelling, and sequencing</td>
+                                    <td>$450</td>
+                                    <td>7-14 Days</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Social Media Style Editing</td>
+                                    <td>Short-form vertical videos</td>
+                                    <td>$125</td>
+                                    <td>1-2 Days</td>
+                                </tr>
+
+                                <!-- ANIMATION -->
+                                <tr>
+                                    <th scope="rowgroup" rowspan="3">
+                                        Animation
+                                    </th>
+                                    <td>2D Animation</td>
+                                    <td>Custom animated graphics</td>
+                                    <td>$250</td>
+                                    <td>5-7 Days</td> 
+                                </tr>
+
+                                <tr>
+                                    <td>Motion Graphics</td>
+                                    <td>Animated titles and visual effects</td>
+                                    <td>$275</td>
+                                    <td>3-5 Days</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Logo Animations</td>
+                                    <td>Animated brand introductions</td>
+                                    <td>$200</td>
+                                    <td>2-4 Days</td>
+                                </tr>
+
+                                <!-- POST-PRODUCTION -->
+                                <tr>
+                                    <th scope="rowgroup" rowspan="3">
+                                        Post-Production
+                                    </th>
+                                    <td>Color Grading</td>
+                                    <td>Professional color adjustments</td>
+                                    <td>$125</td>
+                                    <td>2-3 Days</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Audio Enhancement</td>
+                                    <td>Noise reduction and sound balancing</td>
+                                    <td>$85</td>
+                                    <td>1-3 Days</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Visual Effects</td>
+                                    <td>Composing and digital effects</td>
+                                    <td>$300</td>
+                                    <td>5-10 Days</td>
+                                </tr>
+
+                            </tbody>
+
+                            <tfoot>
+                                <tr>
+                                    <td colspan="5">
+                                        All prices are 'estimates'. Custom packages
+                                        and project quotes are available. Days is 
+                                        equal to Monday - Saturday.
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </section>
+                </section>
+
+                <!-- EDUCATION -->
+                <section class="content-view" data-view="education" hidden>
+                    <h2>Education</h2>
+                    <p>
+                        Here lies my academic background,
+                        coursework, degrees, certifications,
+                        and academic projects.
+                    </p>
+                </section>
+
+                <!-- MILITARY -->
+                <section class="content-view" data-view="military" hidden>
+                    <h2 class="section-title">A little about my military service:</h2>
+                    <div class="project-grid">
+                        <!-- PROJECT ONE -->
+                        <article class="project-card">
+                            <img class="project-thumbnail" src="../99_IMG/boot_camp_graduation.png" alt="The day I graduated from boot camp.">
+                            <h3>My graduation</h3>
+                            <p>
+                                I enlisted in July of 2015. This is of my family and I on the day I graduated boot camp from San Diego, CA.
+                            </p>
+                        </article>
+
+                        <!-- PROJECT TWO -->
+                        <article class="project-card">
+                            <img class="project-thumbnail" src="../99_IMG/ballroom.png" alt="The day I graduated from boot camp.">
+                            <h3>The Marine Corps Ball</h3>
+                            <p>
+                                Here, I am pictured with my mentor, a gunnery sergeant that was in charge of my 'shop'.
+                            </p>
+                        </article>
+                        
+                        <!-- PROJECT THREE -->
+                        <article class="project-card">
+                            <img class="project-thumbnail" src="../99_IMG/visit.png" alt="Visiting my family">
+                            <h3>Visiting Family</h3>
+                            <p>
+                                Here, I am pictured visiting family, my older sister.
+                            </p>
+                        </article>
+
+                        <!-- PROJECT Four -->
+                        <article class="project-card">
+                            <img class="project-thumbnail" src="../99_IMG/awards.png" alt="Award Ceremony">
+                            <h3>Navy & Marine Corps Achievement Medal (NAM)</h3>
+                            <p>
+                                Here, I am pictured receiving an 'NAM' award.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- WORK HISTORY -->
+                <section class="content-view" data-view="history" hidden>
+                    <h2 class="section-title">My work history:</h2>
+                    <div class="project-grid">
+                        <!-- PROJECT ONE -->
+                        <article class="project-card">
+                            <img class="project-thumbnail" src="../99_IMG/boot_camp_graduation.png" alt="The Marine Corps Employment">
+                            <h3>USMC</h3>
+                            <p>
+                                I served in the Marine Corps from July 2015 - July 2019
+                            </p>
+                        </article>
+
+                        <!-- PROJECT TWO -->
+                        <article class="project-card">
+                            <img class="project-thumbnail" src="../99_IMG/wells_fargo.png" alt="Wells Fargo Employment">
+                            <h3>Wells Fargo | Elmhurst</h3>
+                            <p>
+                                I was employed as a teller by Wells Fargo from January 2022 - October 2022.
+                            </p>
+                        </article>
+                        
+                        <!-- PROJECT THREE -->
+                        <article class="project-card">
+                            <img class="project-thumbnail" src="../99_IMG/self_employed.png" alt="My Own Business">
+                            <h3>EpicDanceMan LLC</h3>
+                            <p>
+                                For a time, I owned my own video editing and animation studio.
+                            </p>
+                        </article>
+                    </div>
+                    
+                </section>    
+
+                <!-- PROFESSIONAL DEVELOPMENT -->
+                <section class="content-view" data-view="development" hidden>
+                    <h2>Professional Development</h2>
+                    <p>
+                        Here lies my professional development.
+                    </p>
+                </section>
+
+                <!-- VIDEO & ANIMATION -->
+                <section class="content-view" data-view="animation" hidden>
+                    <h2 class="section-title">Video & Animation</h2>
+                    <div class="section-divider"></div>
+                    <div class="project-grid">
+                        <!-- PROJECT ONE -->
+                        <article class="project-card">
+                            <img class="project-thumbnail" src="../99_IMG/earlyrender.png" alt="High-Reseolution Earth 4k early render">
+                            <h3>Earth 4k</h3>
+                            <p>
+                                Earth 4k is a 3D rendered asset of a topographical Earth in 4k definition.
+                            </p>
+                        </article>
+
+                        <!-- PROJECT TWO -->
+                        <article class="project-card">
+                            <div class="project-thumbnail-placeholders"></div>
+                            <h3>Shepard's Apartment</h3>
+                            <p>
+                                Fans of the Mass Effect games might recognize Commander Shepard's 
+                                Citadel DLC Apartment.
+                            </p>
+                        </article>
+                        
+                        <!-- PROJECT THREE -->
+                        <article class="project-card">
+                            <video class="project-thumbnail" controls playsinline preload="none" poster="../99_IMG/eragon.png">
+                            <source src="../98_VIDEO/eragon_render.mp4" type="video/mp4">
+                            Your browser does not support embedded video.
+                            </video>
+                            <h3>Eragon</h3>
+                            <p>
+                                A 3D model of a .blend file of an Eragon render.
+                            </p>
+                            <a href="../97_DOWNLOADS/Eragon_repair.blend" download>Download .blend file</a>
+                            <br>
+                            <a href="../97_DOWNLOADS/Eragon.stl" download>Download .stl file</a>
+                        </article>
+
+                        <!-- PROJECT FOUR -->
+                        <article class="project-card">
+                            <audio class="project-thumbnail" controls preload="none">
+                                <source src="../96_AUDIO/saints_in_Christ.mp3" type="audio/mpeg">
+                                Your browser does not support embedded audio.
+                            </audio>
+                            <h3>Saints in Christ</h3>
+                            <p>
+                                An audio file of a song I <em>wrote</em>. I did not sing this and utilized AI for the vocals/audio. 
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <!--SKILLS -->
+                <section class="content-view" data-view="skills" hidden>
+                    <h2 class="section-title">Connect With Me</h2>
+                    <div class="section-divider"></div>
+                    <div class="social-grid">
+                    </div>
+                </section>
+
+                <!-- SOCIALS -->
+                <section class="content-view" data-view="socials" hidden>
+                    <h2 class="section-title">Connect With Me</h2>
+                    <div class="section-divider"></div>
+                    <div class="social-grid">
+                        <!-- YOUTUBE -->
+                        <a class="social-card" href="https://www.youtube.com/@FerreiraGamingYT" target="_blank" rel="noopener noreferrer">
+                            <h3>YouTube</h3>
+                            <p>
+                                Videos, animations, and gaming content.
+                            </p>
+                            <span class="social-link">Visit Channel ↗</span>
+                        </a>
+
+                        <!-- TWITCH -->
+                        <a class="social-card" href="https://www.twitch.tv/epic_dance_man" target="_blank" rel="noopener noreferrer">
+                            <h3>Twitch</h3>
+                            <p>
+                                Check out my content livestreams
+                            </p>
+                            <span class="social-link">Visit Channel ↗</span>
+                        </a>
+
+                        <!-- INSTAGRAM -->
+                        <a class="social-card" href="https://www.instagram.com/epic_dance_man_official/" target="_blank" rel="noopener noreferrer">
+                            <h3>Instagram</h3>
+                            <p>
+                                Check out my Instafeed
+                            </p>
+                            <span class="social-link">Visit Channel ↗</span>
+                        </a>
+
+                        <!-- TWITTER -->
+                        <a class="social-card" href="https://x.com/therealDarynF" target="_blank" rel="noopener noreferrer">
+                            <h3>Twitter</h3>
+                            <p>
+                                Check out my Twitter
+                            </p>
+                            <span class="social-link">Visit Profile ↗</span>
+                        </a>
+
+                        <!-- UPWORK -->
+                        <a class="social-card" href="https://www.upwork.com/freelancers/~01c81d5379519eba4c" target="_blank" rel="noopener noreferrer">
+                            <h3>Upwork</h3>
+                            <p>
+                                Check out my Upwork Account
+                            </p>
+                            <span class="social-link">Visit Profile ↗</span>
+                        </a>
+                    </div>
+                </section>
+            </main>
+
+
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <p>
+                    &copy; 2026 Daryn Ferreira
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

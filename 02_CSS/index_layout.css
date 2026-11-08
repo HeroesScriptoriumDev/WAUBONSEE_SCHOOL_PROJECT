@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/*
+ *
+ *  File:   index_layout.css
+ *  Title:  Matthew Ferreira | Waubonsee Digital Portfolio | Home Layout CSS
+ *  Author: Matthew "Matt" Ferreira | Daryn
+ *  Date:   7 November, 2026
+ *  Reference:
+ *      Check the attached 'README.md' file for full dependencies list
+ *
+*/
+
+.blender-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+

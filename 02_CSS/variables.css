@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/*
+*
+*   File: variables.css
+*   Title: Variables for CSS Root Directory
+*   Author: Matthew "Matt" (Daryn) Ferreira
+*   Date: 10/3/2026
+*   Reference:
+*       Check 'README.md' for full dependencies list
+*/
+
+
+:root {
+    /* COLORS */
+    --color-background: #181818;
+    --color-surface: #252525;
+    --color-surface-light: #303030;
+    --color-text: #f5f5f5;
+    --color-text-secondary: #aaaaaa;
+    --color-border: #666666;
+    --color-home: #f62782;
+    --color-about: #fa5c5c;
+    --color-prior: #36fafc;
+    --color-accent: #36fafc;
+
+    /* TYPOGRAPHY */
+    --font-primary: "Segoe UI", Arial, Helvetica, sans-serif;
+    --font-size-base: 16px;
+    --font-size-caption: 18px;
+    --font-size-footer: 14px;
+    --font-size-h1: 2rem;
+    --font-size-h2: 1.5rem;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+    --line-height-base: 1.4;
+
+    /* GRID LAYOUT */
+    --grid-sidebar-width: 180px;
+    --grid-right-width: 180px;
+    --grid-header-height: 120px;
+    --grid-nav-height: 60px;
+    --grid-footer-height: 120px;
+    --page-min-height: 100vh;
+
+    /* SIDEBAR NAVIGATION */
+    --sidebar-width: 180px;
+    --sidebar-btn-width: 160px;
+    --sidebar-btn-offset: -115px;
+    --sidebar-btn-radius: 30px;
+    --sidebar-icon-width: 60px;
+    --sidebar-icon-height: 60px;
+    --sidebar-btn-spacing: 15px;
+
+    /* CIRCULAR NAVIGATION WHEEL */
+    --wheel-size: 360px;
+    --wheel-radius: 145px;
+    --wheel-btn-size: 50px;
+    --wheel-center-size: 230px;
+    --wheel-position-top: 580px;
+    --wheel-position-left: 100px;
+    --wheel-border-radius: 50%;
+
+    /* SPACING */
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 15px;
+    --spacing-lg: 20px;
+    --spacing-xl: 30px;
+
+    /* BORDERS */
+    --border-standard: 1px solid var(--color-border);
+    --radius-small: 8px;
+    --radius-medium: 15px;
+    --radius-large: 30px;
+    --radius-circle: 50%;
+
+    /* TRANSITIONS */
+    --transition-fast: 150ms ease;
+    --transition-normal: 200ms ease;
+    --transition-wheel: 450ms ease-in-out;
+}

@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/*
+ *
+ *  File:   global_layout.css
+ *  Title:  Matthew Ferreira | Waubonsee Digital Portfolio | Global Layout CSS
+ *  Author: Matthew "Matt" Ferreira | Daryn
+ *  Date:   7 November 2026
+ *  Reference:
+ *      Check the attached 'README.md' file for full dependencies list
+ *
+*/
+
+.layout {
+    display: grid;
+    grid-template-columns: var(--grid-sidebar-width) 1fr 1fr 1fr var(--grid-right-width);
+    grid-template-rows: var(--grid-header-height) var(--grid-nav-height) 1fr 1fr var(--grid-footer-height);
+    min-height: var(--page-min-height);
+}
+
+.top {
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+.top h1 {
+    text-align: center;
+}
+
+.left {
+    grid-column: 1;
+    grid-row: 2 / 3;
+    align-self: stretch;
+}
+
+.left-sidebar {
+    position: sticky;
+    top: 10px;
+    width: 180px;
+    overflow: visible;
+}
+
+.left-sidebar-btn {
+    display: flex;
+    width: 160px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px 5px 30px;
+    margin-bottom: 15px;
+    transform: translateX(-115px);
+    transition: transform 200ms ease;
+}
+
+.left-sidebar-btn:hover {
+    transform: translateX(0);
+}
+
+.icons8-home,
+.icons8-about,
+.icons8-prior {
+    order: 2;
+    display: inline-block;
+    width: 60px;        /* Do I want to make this a variable and put it on my variables.css page? */
+    height: 60px;       /* Do I want to make this a variable and put it on my variables.css page? */
+}
+
+.main-content {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;    
+}
+
+.main-content h2,
+figcaption {
+    text-align: center;
+}
+
+.footer {
+    grid-column: 1 / -1;
+    grid-row: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
