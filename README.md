@@ -48,10 +48,10 @@ Dependencies:
         about_styles.css
         index_layout.css
         index_styles.css
+        about_layout.css
+        about_styles.css
         reset.css
         variables.css
-
-    OLD CSS:
         layout.css
         styles.css
     JS:
